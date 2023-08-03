@@ -1,0 +1,14 @@
+<app-header titulo="alert"></app-header>
+
+<ion-content [fullscreen]="true">
+ 
+  <ion-button expand="block" id="present-alert">Click Me</ion-button>
+  <ion-alert
+    trigger="present-alert"
+    header="Alert"
+    subHeader="Important message"
+    message="This is an alert!"
+    [buttons]="alertButtons"
+  ></ion-alert>
+
+</ion-content>
